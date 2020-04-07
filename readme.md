@@ -1,6 +1,6 @@
 ## Instalação através do [Docker](https://www.docker.com/get-started)
 
--   Obs.: Para essa instalação estamos considerando que o docker já esteja instalado e cconfigurado em sua máquina.
+-   Obs.: Para essa instalação estamos considerando que o docker já esteja instalado e configurado em sua máquina.
 
 1. Clonar o projeto
    git clone https://github.com/iagoronanvs/private-code-backend-challange.git
