@@ -29,7 +29,7 @@ O comando acima é responsável por iniciar 3 serviços<br/>
 7. Execute os Seeds<br/>
    php artisan db:seed
 
-8. Acesse a aplicação (http://localhost:8181/)[http://localhost:8181/]
+8. Acesse a aplicação [http://localhost:8181/](http://localhost:8181/)
 
 9. Credenciais<br/>
    email: admin@admin.com<br/>
