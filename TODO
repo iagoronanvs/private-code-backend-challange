@@ -1,0 +1,49 @@
+Objetivo: Desenvolver uma aplicação para gerir uma agenda telefônica com controle de acesso.
+
+Características:
+- A aplicação deve ser responsiva;
+- Design é um grande diferencial;
+- Utilize Laravel;
+- É permitida a utilização de bibliotecas de terceiros;
+
+Cenário: 
+
+- O usuário acessa a aplicação e se cadastra. 
+- Após isso ele pode criar “Clientes”. 
+- Cada cliente pode ter um ou mais telefones. 
+- Para cada telefone devem haver dois botões: 
+    - um link para telefone 
+    - e um link para abrir uma conversa no WhatsApp.
+
+- A aplicação deve possuir um controle de grupos e níveis de acesso 
+- e o usuário principal pode cadastrar novos usuários dentro destes grupos. 
+- Claro que as ações do usuário ficarão limitadas às configurações de cada grupo criado.
+ 
+Dados da Aplicação:
+
+Tela Inicial:
+Login
+Botão de Cadastro
+Nome
+E-mail
+Senha
+Painel:
+Cadastrar Clientes:
+Nome
+E-mail
+Cada cliente pode ter vários telefones associados a ele;
+Deve ser possível localizar um cliente por nome, e-mail ou telefone;
+Para cada telefone listado, adicione:
+Botão “Ligar” (link telefone);
+Botão “WhatsApp” (link conversa WhatsApp);
+Log de atividades
+Cada ação no sistema (acesso ou alteração) deve ser registrada no sistema;
+Cada usuário visualiza seu próprio log de atividades (a menos que seja o admin / criador da conta ou que possua permissão para visualizar o log de todos os usuários);
+Gerenciamento de Usuários, Grupos e Permissões;
+Deve ser possível criar grupos e delegar as seguintes permissões: 
+Visualizar Telefones;
+Editar / Excluir Telefone
+Visualizar Log de Atividades (todos os usuários)
+Criar novos usuários associados a um grupo;
+Alterar senha de usuário logado;
+Botão Logoff;

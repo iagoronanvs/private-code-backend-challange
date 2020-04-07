@@ -1,0 +1,38 @@
+# v2 syntax
+version: '2'
+
+# Named volumes
+volumes:
+  # MySQL Data
+  app-mysql-data:
+    driver: local
+
+services:
+  # MySQL (5.7)
+  mysql:
+    image: mysql:5.7.22
+    container_name: private-mysql
+    volumes:
+      - app-mysql-data:/var/lib/mysql
+    ports:
+      - '3306'
+    environment:
+      - MYSQL_ROOT_PASSWORD=private
+      - MYSQL_DATABASE=private
+      - MYSQL_USER=private
+      - MYSQL_PASSWORD=private
+
+  # PHP (with Caddy)
+  app:
+    image: ambientum/php:7.1-caddy
+    container_name: private-code
+    volumes:
+      - .:/var/www/app
+    ports:
+      - '8181:8080'
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
